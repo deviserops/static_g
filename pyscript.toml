@@ -1,1 +1,1 @@
-packages = ["requests"]
+packages = ["requests", "ssl"]

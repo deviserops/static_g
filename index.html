@@ -15,8 +15,7 @@
   <py-config src="./pyscript.toml"></py-config>
 
   <py-script>
-    url =
-    'https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=1174180&key=67C23853DB7D8A5D78330052C36C62F8&steamid=76561197961256147&l=en-gb'
+    url = 'https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=1174180&key=67C23853DB7D8A5D78330052C36C62F8&steamid=76561197961256147&l=en-gb'
 
     import json
     import requests
@@ -25,9 +24,6 @@
     response = json.loads(res.text)
     print(response)
   </py-script>
-
-
-
 
 </body>
 

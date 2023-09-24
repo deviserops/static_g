@@ -1,1 +1,1 @@
-packages = ["requests", "ssl"]
+packages = ["requests", "ssl", "urllib3"]

@@ -20,7 +20,8 @@
     import json
     import requests
 
-    res = requests.get(url )
+    res = requests.get(url, timeout=5)
+    response.close()
     response = json.loads(res.text)
     print(response)
   </py-script>

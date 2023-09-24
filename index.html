@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+  Hello world
+  <py-config src="./pyscript.toml"></py-config>
+
+  <py-script>
+    url =
+    'https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=1174180&key=67C23853DB7D8A5D78330052C36C62F8&steamid=76561197961256147&l=en-gb'
+
+    import json
+    import requests
+
+    res = requests.get(url )
+    response = json.loads(res.text)
+    print(response)
+  </py-script>
+
+
+
+
+</body>
+
+</html>
